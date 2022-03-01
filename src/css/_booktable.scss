@@ -1,0 +1,55 @@
+.book-table-container{
+    width: 100%;
+    background:$bg-color;
+    padding-block: 3rem;
+    .container{
+        position: relative;
+        .trademark-logo-wrapper{
+            @include position($top:0px,$right:0);
+        }
+
+        .book-table-header{
+            margin-inline: auto;
+            width: max-content;
+            text-align: center;
+            .spoon-img-wrapper{
+                margin-inline: auto;
+            }
+        }
+
+        .select-fields-container{
+            width: 100%;
+            @include gapItems();
+
+            .select-field-wrapper{
+                min-width: 30%;
+                position: relative;
+                
+                select{
+                    height: 55px;
+                    width: 100%;
+                    background: transparent;
+                    border: 1px solid #f5efdb;
+                    color: $white;
+                    padding-inline:1rem;
+                    appearance: none;     
+                }
+
+                .chevron{
+                    position: absolute;
+                    top: 50%;
+                    right: 5px;
+                    pointer-events: none;
+                    transform: translateY(-50%);
+                    color: $white;
+                }
+            }
+        }
+
+        .primary-btn{
+            margin-inline: auto;
+            display: block;
+        }
+    }
+
+}

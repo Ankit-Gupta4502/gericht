@@ -13,6 +13,10 @@ const About = () => {
             setImgState(isIntersecting)
         })
         observer.observe(Img.current)
+
+        return()=>{
+            observer.unobserve(Img.current)
+        }
     }, [])
     
 
@@ -21,7 +25,6 @@ const About = () => {
     return (
         <div className='about-container'>
             <div className="container about-main-section">
-
                 <div className="trademark-logo-wrapper">
                 <svg width="80" height="80" viewBox="0 0 146 146" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M97.7797 63.5032C102.306 58.9337 103.438 52.6421 100.304 49.4779C97.1697 46.3137 90.9383 47.4569 86.4125 52.0264C82.1316 56.3485 80.8892 62.2099 83.4194 65.5095L77.512 71.4738L76.3165 70.2667L48.0842 98.7712L51.4808 102.201L79.7132 73.6959L78.5178 72.489L84.4251 66.5247C87.6934 69.0794 93.4988 67.8253 97.7797 63.5032ZM77.6176 73.7815L51.5657 100.085L50.1804 98.6859L76.2323 72.3829L77.6176 73.7815ZM84.9784 64.9509C82.3991 62.3468 83.4938 57.0043 87.4185 53.0418C91.3431 49.0793 96.6346 47.974 99.2139 50.5782C101.793 53.1825 100.699 58.5251 96.7741 62.4876C92.8494 66.4501 87.5578 67.5552 84.9784 64.9509Z" fill="white"/>

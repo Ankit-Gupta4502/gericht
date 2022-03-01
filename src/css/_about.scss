@@ -22,10 +22,11 @@
 
         .trademark-logo-wrapper{
             position: absolute;
-            top: -100px;
-            left: 0;
+            @include position($top:-100px,$left:0);
             animation: infiniteLoop 2s ease-in infinite ;
         }
+
+
 
         .history-container,.about-us-container{
             width: 100%;

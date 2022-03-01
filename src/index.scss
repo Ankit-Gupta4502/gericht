@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
 
-*{
+*{                                  
   margin:0;
   padding:0;
   box-sizing:border-box;
@@ -11,7 +11,10 @@
 
 html,body{
   scroll-behavior: smooth;
+}
 
+html::-webkit-scrollbar{
+  display:none;
 }
 
 @import './css/colors';
@@ -37,6 +40,13 @@ $max-width:1240px;
   flex-wrap:$wrap;
 }
 
+@mixin position($top:auto,$left:auto,$bottom:auto,$right:auto) {
+  top:$top;
+  bottom:$bottom;
+  left: $left;
+  right: $right;
+}
+
 
 @mixin  mt-top($margin) {
   margin-top: $margin;
@@ -47,12 +57,30 @@ $max-width:1240px;
 }
 
 
+.text-white{
+  color: $white;
+}
+
+.f-bold{
+  font-weight: 700;
+}
+
+
+
 .mt-32{
   margin-top: 32px;
 }
 
 .my-32{
   margin-block: 32px;
+}
+
+.mt-64{
+  margin-top: 64px;
+}
+
+.mt-8{
+  margin-block: 8px;
 }
 
 .text-grey{
@@ -85,9 +113,7 @@ img{
   padding-inline: 3rem;
 }
 
-.py-60{
-  padding-block: 4rem;
-}
+
 
 a{
   text-decoration: none;
@@ -169,7 +195,7 @@ p{
 
 
 
-@import './css/navbar','./css/hero','./css/breakpoints',"./css/about";
+@import './css/navbar','./css/hero','./css/breakpoints',"./css/about","./css/booktable",'./css/foodmenu','./css/menuPalette';
 
 html,body{
   @include lg{
@@ -183,9 +209,4 @@ html,body{
   @include sm{
     font-size: 12px;
   }
-
-  
 }
-
-
-

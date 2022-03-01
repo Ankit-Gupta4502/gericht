@@ -1,0 +1,22 @@
+.menu-palatte-container{
+    background-color: $bg-color;
+   
+    .container{
+        padding-block: 3rem;
+        .menu-palatte-header{
+            @include alignItems();
+            flex-direction: column;
+            max-width: 750px;
+            margin-inline: auto;
+            
+            p{
+            text-align: center;
+            color: $text-grey;
+            }
+        }
+
+        .menu-list-container{
+            @include mt-top($margin:64px);
+        }
+    }
+}
