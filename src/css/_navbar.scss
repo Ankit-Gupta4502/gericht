@@ -1,0 +1,68 @@
+
+
+.navbar-container{
+    width: 100%;
+    padding: 1rem 4rem;
+    background: $bg-color;
+    .navbar-wrapper{
+        width: 100%;
+        max-width: 1440px;
+        @include alignItems(flex,space-between,center);
+        margin-inline:auto;
+
+        .logo{
+            color: $white
+        }
+
+        .nav-links-wrapper{
+            @include gapItems();
+
+            .hamburger-container{
+
+                .dash-1{
+                    width: 30px;
+                    display: block;
+                    background: $white;
+                    height: 3px;
+                    border-radius: 2px;
+                }
+                .dash-2{
+                    display: block;
+                    margin-top: 0.5rem;
+                    float: right;
+                    width: 22px;
+                    background: $white;
+                    height: 3px;
+                    border-radius: 2px;
+                }
+
+            }
+            
+            .menu-link{
+                color:$white
+            }
+
+            .social-icons-container{
+                @include gapItems();
+                a{
+                    color:$white;
+                    padding-top: 0.4rem;
+                }
+            }
+        }
+
+        .navbar-login-container{
+            @include gapItems($gap:0);
+            a{
+                color:$white;
+                padding-inline:1.5rem;
+                height: max-content;
+                width: max-content;
+            }
+
+            .login-link{
+                border-right: 1px solid $white;
+            }
+        }
+    }
+}

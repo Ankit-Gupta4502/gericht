@@ -1,0 +1,81 @@
+.about-container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../Images/hero/bg-Img.png');
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    transition: 350ms;
+    background-repeat: no-repeat;
+    padding-block: 3rem;
+    display: grid;
+    position: relative;
+    place-content: center;
+    overflow: hidden;
+
+    
+
+    .about-main-section{
+        @include gapItems($gap:4rem);
+        width:100%;
+        position: relative;
+
+        .trademark-logo-wrapper{
+            position: absolute;
+            top: -100px;
+            left: 0;
+            animation: infiniteLoop 2s ease-in infinite ;
+        }
+
+        .history-container,.about-us-container{
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .about-us-container{
+            text-align: right;
+            .spoon-img-wrapper{
+                margin-left: auto;
+            }
+        }
+        .knife-img-wrapper{
+            height: 300px;
+            position: relative;
+            z-index: 10;
+            
+        }
+
+    }
+
+    .bg-text{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        color:#272727;
+        transform: translate(-50%,-50%);
+        font-size: 30vw;
+        mix-blend-mode: overlay;
+        z-index: 1;
+    }
+
+
+    @keyframes infiniteLoop {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+}
+
+
+.trademark-logo-wrapper{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    animation: infiniteLoop 2s ease-in infinite ;
+}
