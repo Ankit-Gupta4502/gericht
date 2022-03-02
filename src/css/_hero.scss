@@ -15,37 +15,7 @@
         @include gapItems($wrap:no-wrap,$gap:3rem);
 
         position: relative;
-        .hero-img-wrapper{
-            max-width:350px;
-            width: 100%;
-            aspect-ratio: 1/1.1;
-            position: relative;
-            z-index: 1;
-            transition: 1s;
-            transition-delay: 1s;
-
-            &::after{
-                content: '';
-                position: absolute;
-                top: -15px;
-                z-index: -1;
-                right: -15px;
-                width: 70%;
-                height: 70%;
-                background: $primary-color;
-            }
-
-            &::before{
-                content: '';
-                position: absolute;
-                bottom:-15px;
-                z-index: -1;
-                left: -15px;
-                width: 70%;
-                height: 70%;
-                background: $primary-color;
-            }
-        }
+        
     }
 
 
@@ -72,3 +42,34 @@
 }
 
 
+.hero-img-wrapper{
+    max-width:350px;
+    width: 100%;
+    aspect-ratio: 1/1.1;
+    position: relative;
+    z-index: 1;
+    transition: 1s;
+    transition-delay: 1s;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: -15px;
+        z-index: -1;
+        right: -15px;
+        width: 70%;
+        height: 70%;
+        background: $primary-color;
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        bottom:-15px;
+        z-index: -1;
+        left: -15px;
+        width: 70%;
+        height: 70%;
+        background: $primary-color;
+    }
+}

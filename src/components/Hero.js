@@ -1,6 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import spoon from '../Images/hero/spoon.png'
 import heroImg from "../Images/hero/1.jpg";
+import BlockImage from "./BlockImage";
 
 const Hero = () => {
   const [showUp, setShowUp] = useState(false)
@@ -15,9 +16,6 @@ const Hero = () => {
     }, 1000)
 
   }, [])
-
-
-
 
 
   return (
@@ -46,10 +44,7 @@ const Hero = () => {
           </div>
           <button className="primary-btn">Explore Menu</button>
         </div>
-
-        <div className="hero-img-wrapper">
-          <img src={heroImg} alt="" className="hero-img" />
-        </div>
+        <BlockImage image={heroImg}/>
       </div>
     </div>
   )

@@ -4,6 +4,8 @@ import FoodMenu from "./components/FoodMenu";
 import Hero from "./components/Hero";
 import MenuPalatte from "./components/MenuPalatte";
 import Navbar from "./components/Navbar";
+import StylishCusine from "./components/StylishCusine";
+import Testimonial from "./components/Testimonial";
 
 
 
@@ -16,6 +18,8 @@ function App() {
       <BookTable/>
       <FoodMenu/>
       <MenuPalatte/>
+      <Testimonial/>
+      <StylishCusine/>
     </>
   );
 }

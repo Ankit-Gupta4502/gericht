@@ -20,7 +20,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background: rgba($color: #000000, $alpha: 0.25);
+        background: rgba($color: #000000, $alpha: 0.5);
         @include position($right:0,$top:0);
         mix-blend-mode: overlay;
         z-index: 1;
@@ -44,9 +44,6 @@
             transform: translateY(0);
         }
     }
-
-
-   
 
     a{
         display: block;

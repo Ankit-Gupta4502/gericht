@@ -15,8 +15,29 @@
             }
         }
 
+        .btn-container{
+            margin-top: 72px;
+            .primary-btn{
+                display: block;
+                margin-inline:auto;
+            }
+        }
+
         .menu-list-container{
             @include mt-top($margin:64px);
+
+            .menu{
+                @include gapItems($wrap:nowrap,$gap:72px);
+                flex-direction: column;
+                
+                .m-main-text-container{
+                    width: 100%;
+                    @include alignItems($x-position:space-between);
+                    padding-bottom: 1rem;
+                    border-bottom: 1px solid #4d4d4d;
+                }
+            }
         }
+
     }
 }

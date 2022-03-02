@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+
 *{                                  
   margin:0;
   padding:0;
@@ -61,6 +63,10 @@ $max-width:1240px;
   color: $white;
 }
 
+.text-grey{
+  color: $text-grey;
+}
+
 .f-bold{
   font-weight: 700;
 }
@@ -83,9 +89,7 @@ $max-width:1240px;
   margin-block: 8px;
 }
 
-.text-grey{
-  color: $text-grey;
-}
+
 
 .primary-btn{
   font-weight: 700;
@@ -195,7 +199,7 @@ p{
 
 
 
-@import './css/navbar','./css/hero','./css/breakpoints',"./css/about","./css/booktable",'./css/foodmenu','./css/menuPalette';
+@import './css/navbar','./css/hero','./css/breakpoints',"./css/about","./css/booktable",'./css/foodmenu','./css/menuPalette','./css/testimonial';
 
 html,body{
   @include lg{
