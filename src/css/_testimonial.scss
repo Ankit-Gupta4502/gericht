@@ -1,0 +1,18 @@
+.testimonial-container{
+    width: 100%;
+    min-height: 100vh;
+    @include gapItems($gap:5rem,$wrap:wrap);
+    background: url('../Images/hero/bg-Img.png') no-repeat fixed center;
+    background-size: cover;
+    padding-block: 4rem;
+
+
+    .testimonial-main-text-container{
+        max-width: 530px;
+
+        .signature{
+            font-family:$corm-font-family;
+            color: $white;
+        }
+    }
+}
