@@ -5,7 +5,8 @@
     .container{
         position: relative;
         .trademark-logo-wrapper{
-            @include position($top:0px,$right:0);
+            position: absolute;
+            @include position($top:0px,$right:1rem);
         }
 
         .book-table-header{

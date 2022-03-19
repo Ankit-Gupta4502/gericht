@@ -12,7 +12,7 @@
     .hero-wrapper{
         margin-inline: auto;
         max-width: $max-width;
-        @include gapItems($wrap:no-wrap,$gap:3rem);
+        @include gapItems($wrap:nowrap,$gap:3rem);
 
         position: relative;
         .hero-img-wrapper{

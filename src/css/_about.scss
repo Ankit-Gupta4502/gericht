@@ -62,21 +62,15 @@
     }
 
 
-    @keyframes infiniteLoop {
-        from{
-            transform: rotate(0deg);
-        }
-        to{
-            transform: rotate(360deg);
-        }
+    
+}
+@keyframes infiniteLoop {
+    from{
+        transform: rotate(0deg);
     }
-
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 
-.trademark-logo-wrapper{
-    position: absolute;
-    top: -100px;
-    left: 0;
-    animation: infiniteLoop 2s ease-in infinite ;
-}

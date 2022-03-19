@@ -13,12 +13,7 @@ const Hero = () => {
     window.setTimeout(() => {
       setShowUp(true)
     }, 1000)
-
   }, [])
-
-
-
-
 
   return (
     <div className='hero-container'>
